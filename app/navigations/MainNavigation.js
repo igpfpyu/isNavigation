@@ -3,26 +3,11 @@ import {
     View,
     Text
 } from 'react-native';
-import PublicHeader from '../components/PublicHeader/PublicHeader'
-class HomeScreen extends React.Component{
-    render(){
-        return (
-            <View>
-                <PublicHeader />
-                <Text>Home</Text>
-            </View>
-        )
-    }
-}
-class AboutScreen extends React.Component{
-    render(){
-        return (
-            <View>
-                <Text>AboutScreen</Text>
-            </View>
-        )
-    }
-}
+import Index from '../pages/Index/Index';
+import Movie from '../pages/Movie/Movie';
+import Video from '../pages/Video/Video';
+import Show from '../pages/Show/Show';
+import Me from '../pages/Me/Me';
 import {createAppContainer, createBottomTabNavigator, createStackNavigator} from 'react-navigation';
 const navConfig=(title)=>{
     return {
@@ -33,17 +18,29 @@ const navConfig=(title)=>{
     }
 }
 const bottomTabNavigator={
-    Home:{
-        screen:HomeScreen,
+    "Index":{
+        screen:Index,
         ...navConfig('首页')
     },
-    About:{
-        screen:AboutScreen,
-        ...navConfig('关于我们')
+    "Movie":{
+        screen:Movie,
+        ...navConfig('电影')
+    },
+    "Video":{
+        screen:Video,
+        ...navConfig('视频')
+    },
+    "Show":{
+        screen:Show,
+        ...navConfig('演出')
+    },
+    "Me":{
+        screen:Me,
+        ...navConfig('我的')
     }
 }
 const stackNavigator = new createBottomTabNavigator(bottomTabNavigator,{
-    initialRouteName:"Home",
+    initialRouteName:"Index",
     tabBarOptions: {
         activeTintColor: 'tomato',
         inactiveTintColor: 'gray',
@@ -60,11 +57,5 @@ const RootStack=new createStackNavigator({
             header:null
         },
     },
-    Abouts:{
-        screen:AboutScreen,
-        navigationOptions:{
-            header:null
-        }
-    }
 }, stackNavigatorConfig);
 export default createAppContainer(RootStack)
