@@ -11,7 +11,7 @@ export default class Me extends React.Component{
     render(){
         return (
             <View>
-                <PublicHeader />
+                <PublicHeader title="我的" />
                 <Text>Me</Text>
             </View>
         )

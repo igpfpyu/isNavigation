@@ -11,7 +11,7 @@ export default class Index extends React.Component{
     render(){
         return (
             <View>
-                <PublicHeader />
+                <PublicHeader title="首页" />
                 <Text>Index</Text>
             </View>
         )

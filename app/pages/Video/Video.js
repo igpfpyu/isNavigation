@@ -11,7 +11,7 @@ export default class Video extends React.Component{
     render(){
         return (
             <View>
-                <PublicHeader />
+                <PublicHeader title="视频" />
                 <Text>Video</Text>
             </View>
         )

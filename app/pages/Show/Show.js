@@ -11,7 +11,7 @@ export default class Show extends React.Component{
     render(){
         return (
             <View>
-                <PublicHeader />
+                <PublicHeader title="演出" />
                 <Text>Show</Text>
             </View>
         )

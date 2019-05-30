@@ -11,7 +11,7 @@ export default class Movie extends React.Component{
     render(){
         return (
             <View>
-                <PublicHeader />
+                <PublicHeader title="电影" />
                 <Text>Movie</Text>
             </View>
         )

@@ -1,7 +1,6 @@
 import {
     Dimensions,
     Platform,
-
 } from 'react-native';
 const {width, height}=Dimensions.get('window');
 const iHeight=Platform.OS==="ios"?64:44;
@@ -9,10 +8,19 @@ export default {
     container:{
         width,
         height:iHeight,
-        backgroundColor:"red"
+        backgroundColor:"#fff",
+        paddingTop:20,
+
     },
     header:{
-        paddingTop:20,
         height:44,
+        width:width,
+        flexDirection:"row",
+        justifyContent:"center",
+        alignItems:"center",
+        backgroundColor:"blue"
+    },
+    title:{
+        color:"#fff",
     }
 }
