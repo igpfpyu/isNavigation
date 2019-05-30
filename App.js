@@ -19,6 +19,8 @@ const instructions = Platform.select({
 type Props = {};
 import AppContainer from './app/navigations/MainNavigation';
 import {createAppContainer} from "react-navigation";
+//全局方法
+import './app/platform/utils/GlobalUtils';
 export default class App extends Component<Props> {
   render() {
     return <AppContainer />;
