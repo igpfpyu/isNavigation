@@ -4,12 +4,29 @@ import Movie from "../pages/Movie/Movie";
 import Video from "../pages/Video/Video";
 import Show from "../pages/Show/Show";
 import Me from "../pages/Me/Me";
+import Icon from 'react-native-vector-icons/FontAwesome';
+import {
+    View
+} from 'react-native';
 const navConfig=(title)=>{
     return {
         navigationOptions:{
             header:null,
-            tabBarLabel:title
-        }
+            tabBarLabel:title,
+            tabBarIcon:({tintColor, focused})=>(
+                <Icon name="home" size={30} color={tintColor} />
+            ),
+            // tabBarOnPress:(scene,jumpToIndex) => {
+            //     console.log(scene);
+            //     console.log(jumpToIndex)
+            //     jumpToIndex(scene.index)
+            // }
+        },
+        tabBarOptions:{
+            showIcon:true
+
+        },
+
     }
 }
 export default{
