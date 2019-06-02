@@ -8,7 +8,7 @@ export default {
     container:{
         width,
         height:iHeight,
-        backgroundColor:"#fff",
+        backgroundColor:"#f6f6f6",
         paddingTop:20,
 
     },
@@ -18,9 +18,12 @@ export default {
         flexDirection:"row",
         justifyContent:"center",
         alignItems:"center",
-        backgroundColor:"blue"
+        backgroundColor:"#f8f8f8",
+        borderBottomWidth:1,
+        borderBottomColor:"#e6e6e6",
+        borderBottomStyle:"solid",
     },
     title:{
-        color:"#fff",
+        color:"#333",
     }
 }

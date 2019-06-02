@@ -4,9 +4,22 @@ import BottomTabNavigator from './BottomTabNavigator'
 const stackNavigator = new createBottomTabNavigator(BottomTabNavigator,{
     initialRouteName:"Index",
     tabBarOptions: {
-        activeTintColor: 'tomato',
-        inactiveTintColor: 'gray',
-    }
+        activeTintColor: '#34c099',
+        inactiveTintColor: '#fff',
+        inactiveBackgroundColor:"#232631",
+        activeBackgroundColor:"#232631",
+        style:{
+        },
+        tabStyle:{
+            paddingTop:6,
+            paddingBottom:3,
+            border:0
+        },
+        iconStyle:{
+            paddingBottom:0,
+        },
+
+    },
 });
 const RootStack=new createStackNavigator({
     HomeTar:{
