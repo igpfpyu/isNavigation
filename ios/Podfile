@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'isNavigation' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for isNavigation
+
+  target 'isNavigationTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'isNavigation-tvOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for isNavigation-tvOS
+
+  target 'isNavigation-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
